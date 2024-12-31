@@ -9,7 +9,8 @@
 
    docs/1.getting_ready.md
    docs/2.quick_user_experience.md
-   docs/general_basic_courses.md
    docs/6.mecanum_wheel_control.md
    docs/8.ai_vision_project.md
+   docs/11_network_configuration.md
+   docs/resources_download.md
 
