@@ -70,13 +70,13 @@ For details on each mode, refer to the documentation provided earlier.
 
 (2) Double-click the terminal icon<img src="../_static/media/11.network_configuration/section_1/image10.png" style="width:40px" /> on the desktop to open the command line terminal.
 
-(3) Enter the command `cd hiwonder-toolbox/` and press Enter to navigate to the configuration file directory.
+(3) Enter the command and press Enter to navigate to the configuration file directory.
 
 ```bash
 cd hiwonder-toolbox/
 ```
 
-(4) Enter the command `vim wifi_conf.py` and press Enter to open the configuration file.
+(4) Enter the command  and press Enter to open the configuration file.
 
 ```bash
 vim hiwonder_wifi_conf.py
@@ -94,10 +94,6 @@ The configuration file defaults to AP Direct Connection Mode. If all code lines 
 
 (6) After verifying the entries, press the ESC key, then type **:wq** to save and exit the file.
 
-```shell
-:wq
-```
-
 (7) Change the value of `HW_WIFI_AP_GATEWAY` to set a new IP address, such as **'192.168.149.2'** for example.
 
 ```bash
@@ -110,7 +106,7 @@ vim hw_wifi.py
 
 (9) After confirming the entries, press the ESC key, then type **":wq"** to save and exit the file.
 
-(10) Enter the command **"sudo systemctl restart hw_wifi.service"** to restart the robot's Wi-Fi service.
+(10) Enter the command to restart the robot's Wi-Fi service.
 
 ```bash
 sudo systemctl restart hw_wifi.service
@@ -189,13 +185,13 @@ For LAN mode, please enable location services on your smartphone.
 
 (2) Click the terminal icon<img src="../_static/media/11.network_configuration/section_1/image10.png" style="width:50px" />at the top of the system screen to open the command line terminal.
 
-(3) Enter the command **"cd hiwonder-toolbox"** and press Enter to access the configuration file directory.
+(3) Enter the command and press Enter to access the configuration file directory.
 
 ```bash
 cd hiwonder-toolbox
 ```
 
-(4) Enter the command "vim wifi_conf.py" and press Enter to open the configuration file
+(4) Enter the command and press Enter to open the configuration file
 
 ```bash
 vim hiwonder_wifi_conf.py
@@ -223,11 +219,7 @@ HW_WIFI_MODE = 2    #wifi的工作模式，1为AP模式，2为STA模式
 
 (7) After confirming the entries are correct, press the ESC key, then type **":wq"** to save and exit the file.
 
-```bash
-:wq
-```
-
-(8) Enter the command **"sudo systemctl restart hw_wifi.service"** to restart the robot's Wi-Fi service.
+(8) Enter the command to restart the robot's Wi-Fi service.
 
 ```bash
 sudo systemctl restart hw_wifi.service

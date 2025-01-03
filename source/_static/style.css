@@ -14,7 +14,9 @@ table{
     display: block;
     margin: 0 auto 24px;
 }
-
+table.highlighttable{
+    margin: 0 auto;
+}
 .half_img{
     width:500px;
     display: block;
