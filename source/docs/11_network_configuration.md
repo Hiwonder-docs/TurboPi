@@ -22,11 +22,11 @@ Using t**he Android system** as an example, these instructions also apply to iOS
 
 (1) Open the "WonderPi" app on your phone. Then, go to "Basic" and select "MasterPi".
 
-<img src="../_static/media/11.network_configuration/section_1/image1.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image1.png" style="width:700px" />
 
 (2)  Tap the "+" button in the bottom right corner of the screen, and choose **"Direct Connection Mode".**
 
-<img src="../_static/media/11.network_configuration/section_1/image2.png" style="width:700px"/>
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image2.png" style="width:700px"/>
 
 :::{Note}
 If you prefer to connect in LAN mode, refer to [1.3 Connecting in LAN Mode (optional)]().
@@ -34,7 +34,7 @@ If you prefer to connect in LAN mode, refer to [1.3 Connecting in LAN Mode (opti
 
 (3) Tap **"Connect to Device Hotspot"**. This will take you to your phone's settings to connect to the hotspot created by the robot.
 
-<img src="../_static/media/11.network_configuration/section_1/image3.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image3.png" style="width:700px" />
 
 (4) Look for a hotspot name starting with "HW". The password is "hiwonder".
 
@@ -46,7 +46,7 @@ for iOS: Wait until the Wi-Fi icon<img src="../_static/media/11.network_configur
 
 (5) Return to the app, and tap the robot icon to enter the mode selection screen.
 
-<img src="../_static/media/11.network_configuration/section_1/image7.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image7.png" style="width:700px" />
 
 :::{Note}
 If a pop-up message appears saying "Network Unavailable, Continue Connection?", simply tap "Keep Connection".
@@ -58,7 +58,7 @@ If a pop-up message appears saying "Network Unavailable, Continue Connection?", 
 
 (7)  The mode selection screen appears as shown below:
 
-<img src="../_static/media/11.network_configuration/section_1/image9.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image9.png" style="width:700px" />
 
 For details on each mode, refer to the documentation provided earlier.
 
@@ -83,20 +83,18 @@ vim hiwonder_wifi_conf.py
 ```
 
 :::{Note}
-
 The configuration file defaults to AP Direct Connection Mode. If all code lines are commented out, it will be set to AP Direct Connection Mode.
-
 :::
 
-<img src="../_static/media/11.network_configuration/section_1/image13.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image13.png" style="width:700px" />
 
 (5) If there are multiple devices nearby, you can modify **"HW_WIFI_AP_SSID"** and **"HW_WIFI_AP_PASSWORD"** to set a unique name and password for each device. For example, use **"HW-Robot"** as the name and **"hiwonder"** as the password, as shown below.
 
-<img src="../_static/media/11.network_configuration/section_1/image14.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image14.png" style="width:700px" />
 
 (6) After verifying the entries, press the ESC key, then type **:wq** to save and exit the file.
 
-```py
+```shell
 :wq
 ```
 
@@ -108,7 +106,7 @@ vim hw_wifi.py
 
 (8) After confirming the entries, press the ESC key, then type ":wq" to save and exit the file.
 
-<img src="../_static/media/11.network_configuration/section_1/image17.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image17.png" style="width:700px" />
 
 (9) After confirming the entries, press the ESC key, then type **":wq"** to save and exit the file.
 
@@ -126,7 +124,7 @@ sudo systemctl restart hw_wifi.service
 
 <img class="common_img" src="../_static/media/11.network_configuration/section_1/image21.png" style="width:500px" />
 
-<img src="../_static/media/11.network_configuration/section_1/image22.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image22.png" style="width:700px" />
 
 <p id="anchor_1_3"></p>
 
@@ -151,19 +149,19 @@ For LAN mode, please enable location services on your smartphone.
 
 (2) Open the "WonderPi" app on your phone, then select **"Basic"** and "MasterPi".
 
-<img src="../_static/media/11.network_configuration/section_1/image1.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image1.png" style="width:700px" />
 
 (3) Tap the "+" button in the bottom right corner, and choose **"LAN Mode".**
 
-<img src="../_static/media/11.network_configuration/section_1/image24.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image24.png" style="width:700px" />
 
 (4) The app will prompt you to enter the password for the connected Wi-Fi network. (Please ensure the password is correct, as an incorrect password will result in connection failure.) After entering the password, tap "OK".
 
-<img src="../_static/media/11.network_configuration/section_1/image25.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image25.png" style="width:700px" />
 
 (5) Tap "Connect to Device Hotspot".
 
-<img src="../_static/media/11.network_configuration/section_1/image26.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image26.png" style="width:700px" />
 
 (6) Your phone will automatically navigate to the Wi-Fi settings page. Find the hotspot starting with "HW" and enter the password "hiwonder". Once connected, tap the "Return" button.
 
@@ -171,17 +169,15 @@ For LAN mode, please enable location services on your smartphone.
 
 (7) The app will now begin the connection process.
 
-<img src="../_static/media/11.network_configuration/section_1/image28.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image28.png" style="width:700px" />
 
 (8) After a short wait, the robot's icon will appear on the main screen, and the LED on the expansion board will remain steadily lit.
 
-<img src="../_static/media/11.network_configuration/section_1/image7.png" style="width:700px" />
-
-
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image7.png" style="width:700px" />
 
 (9) Press and hold the robot icon in the app to view the robot's assigned IP address and device ID.
 
-<img src="../_static/media/11.network_configuration/section_1/image30.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image30.png" style="width:700px" />
 
 (10) Use a remote desktop tool to search for the robot's IP address and connect to the remote desktop.
 
@@ -223,7 +219,7 @@ HW_WIFI_MODE = 2    #wifi的工作模式，1为AP模式，2为STA模式
  Selecting a 5G Wi-Fi signal will provide higher transfer speeds. If there is lag on standard Wi-Fi, consider switching to a 5G signal.
 :::
 
-<img src="../_static/media/11.network_configuration/section_1/image32.png" style="width:700px" />
+<img class="align-center" src="../_static/media/11.network_configuration/section_1/image32.png" style="width:700px" />
 
 (7) After confirming the entries are correct, press the ESC key, then type **":wq"** to save and exit the file.
 
