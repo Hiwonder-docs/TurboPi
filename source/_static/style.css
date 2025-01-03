@@ -15,6 +15,12 @@ table{
     margin: 0 auto 24px;
 }
 
+.half_img{
+    width:500px
+    display: block;
+    margin: 0 auto 24px;
+}
+
 table {
     min-width: 50%;
     margin: 0 auto 24px;
