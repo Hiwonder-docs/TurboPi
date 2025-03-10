@@ -1,10 +1,8 @@
 # 5. Raspberry Pi Series Robot Network Configuration Instruction
 
-## 1. Network Configuration Overview
+## 5.1 Network Configuration Overview
 
 This tutorial uses the MasterPi Pi5 version as an example, and it applies to other Pi5 models in this series as well.
-
-### 1.1 Network Configuration Overview
 
 The robot's network can be configured in two modes:
 
@@ -14,9 +12,9 @@ The robot's network can be configured in two modes:
 
 By default, the robot operates in AP (direct connection) mode. The features and functions of the robot remain the same whether in AP mode or STA (local area network) mode.
 
-### 1.2 AP Direct Connection Mode
+## 5.2 AP Direct Connection Mode
 
-**1.2.1 Mode Switching through Phone**
+**5.2.1 Mode Switching through Phone**
 
 Using t**he Android system** as an example, these instructions also apply to iOS.
 
@@ -64,7 +62,7 @@ For details on each mode, refer to the documentation provided earlier.
 
 <p id="anchor_1_2_2"></p>
 
-**1.2.2 Switching via Network Configuration File**
+**5.2.2 Switching via Network Configuration File**
 
 (1) Power on the robot and connect it to the remote control software, VNC.
 
@@ -79,7 +77,7 @@ cd hiwonder-toolbox/
 (4) Enter the command  and press Enter to open the configuration file.
 
 ```bash
-vim hiwonder_wifi_conf.py
+vim wifi_conf.py
 ```
 
 :::{Note}
@@ -97,7 +95,7 @@ The configuration file defaults to AP Direct Connection Mode. If all code lines 
 (7) Change the value of `HW_WIFI_AP_GATEWAY` to set a new IP address, such as **'192.168.149.2'** for example.
 
 ```bash
-vim hw_wifi.py
+vim wifi.py
 ```
 
 (8) After confirming the entries, press the ESC key, then type ":wq" to save and exit the file.
@@ -124,7 +122,7 @@ sudo systemctl restart hw_wifi.service
 
 <p id="anchor_1_3"></p>
 
-### 1.3 Connecting in LAN Mode (optional)
+## 5.3 Connecting in LAN Mode (optional)
 
 :::{Note}
 
@@ -133,7 +131,7 @@ sudo systemctl restart hw_wifi.service
 * Switching to LAN mode cannot be done directly through the system's network settings, as the Wi-Fi has custom configurations. Please follow the instructions in Section 1.3.2 to switch modes using the network configuration file.
   :::
 
-**1.3.1 Switching via the Mobile App**
+**5.3.1 Switching via the Mobile App**
 
 :::{Note}
 For LAN mode, please enable location services on your smartphone.
@@ -159,7 +157,7 @@ For LAN mode, please enable location services on your smartphone.
 
 <img class="common_img" src="../_static/media/11.network_configuration/section_1/image26.png" style="width:700px" />
 
-(6) Your phone will automatically navigate to the Wi-Fi settings page. Find the hotspot starting with "HW" and enter the password "hiwonder". Once connected, tap the "Return" button.
+(6) Your phone will automatically navigate to the Wi-Fi settings page. Find the hotspot starting with "HW" and enter the password **"hiwonder"**. Once connected, tap the "Return" button.
 
 <img class="common_img" src="../_static/media/11.network_configuration/section_1/image27.png" style="width:350px" />
 
@@ -179,7 +177,7 @@ For LAN mode, please enable location services on your smartphone.
 
 (11) To switch back to direct connection mode from LAN mode, press and hold the KEY1 button on the expansion board until the blue LED flashes, indicating that the switch is complete.
 
-**1.3.2 Switching via Network Configuration File**
+**5.3.2 Switching via Network Configuration File**
 
 (1) Power on the robot and connect it to the remote control software, NoMachine.
 
@@ -194,7 +192,7 @@ cd hiwonder-toolbox
 (4) Enter the command and press Enter to open the configuration file
 
 ```bash
-vim hiwonder_wifi_conf.py
+vim wifi_conf.py
 ```
 
 (5) First, change the value of "HW_WIFI_MODE" to 2:
@@ -222,7 +220,7 @@ HW_WIFI_MODE = 2    #wifi的工作模式，1为AP模式，2为STA模式
 (8) Enter the command to restart the robot's Wi-Fi service.
 
 ```bash
-sudo systemctl restart hw_wifi.service
+sudo systemctl restart wifi.service
 ```
 
 (9) To switch back to Direct Connection Mode, edit the configuration file again, comment out all lines, save, and restart.
