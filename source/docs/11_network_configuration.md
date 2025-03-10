@@ -27,7 +27,7 @@ Using t**he Android system** as an example, these instructions also apply to iOS
 <img class="common_img" src="../_static/media/11.network_configuration/section_1/image2.png"/>
 
 :::{Note}
-If you prefer to connect in LAN mode, refer to [1.3 Connecting in LAN Mode (optional)](#anchor_1_3).
+If you prefer to connect in LAN mode, refer to [5.3 Connecting in LAN Mode (optional)](#anchor_1_3).
 :::
 
 (3) Tap **"Connect to Device Hotspot"**. This will take you to your phone's settings to connect to the hotspot created by the robot.
@@ -122,10 +122,9 @@ sudo systemctl restart hw_wifi.service
 
 <p id="anchor_1_3"></p>
 
-## 5.3 Connecting in LAN Mode (optional)
+## 5.3 Connecting in LAN Mode(optional)
 
 :::{Note}
-
 * To configure the LAN mode using a smartphone, you must first enable the phone's location services.
 
 * Switching to LAN mode cannot be done directly through the system's network settings, as the Wi-Fi has custom configurations. Please follow the instructions in Section 1.3.2 to switch modes using the network configuration file.
@@ -203,7 +202,7 @@ vim wifi_conf.py
 
 ③ 3 represents Direct Sharing Mode
 
-```py
+```python
 HW_WIFI_MODE = 2    #wifi的工作模式，1为AP模式，2为STA模式
 ```
 
