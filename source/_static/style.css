@@ -1,7 +1,9 @@
 section p {
-    margin: 0 0 18px;
+    margin: 0 0 16px;
 }
-
+.caption{
+    display:none;
+}
 .wy-nav-side .wy-menu-vertical header, .wy-menu-vertical p.caption{
     color: #f98800;
     text-transform: unset;
