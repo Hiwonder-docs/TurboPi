@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'TurboPi'
-copyright = '2024, Hiwonder'
+copyright = '2025, Hiwonder'
 author = 'Hiwonder'
 release = 'v1.0'
 
