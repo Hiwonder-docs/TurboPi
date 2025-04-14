@@ -7,7 +7,6 @@
 TurboPi
 ============
 
-
 .. toctree::
    :maxdepth: 2
    :caption: TurboPi
