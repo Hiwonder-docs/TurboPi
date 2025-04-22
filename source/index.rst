@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-============
+=============
 TurboPi
-============
+=============
 
 .. toctree::
    :maxdepth: 2
@@ -17,4 +17,4 @@ TurboPi
    docs/8.ai_vision_project.md
    docs/11_network_configuration.md
    docs/resources_download.md
-
+   Download <https://drive.google.com/drive/folders/1x5IXJTTF_mz3FnN-iiRB4MxgKbYnIj25?usp=sharing>
