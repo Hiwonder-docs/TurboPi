@@ -9,4 +9,4 @@
 - MobaXterm：[MobaXterm_Installer_v22.1.zip](https://drive.google.com/drive/folders/1QbjTg23EmtQkQojAJkyRK95_elvL7sC8?usp=sharing)
 - File Transferring Tool：[WinSCP-5.15.3-Setup.exe](https://drive.google.com/drive/folders/1C7EuIE-0HHNerIY1HGWBVvhwP9w9YMJE?usp=sharing)
 - APP Installation Pack (Android)：[WonderPi](https://play.google.com/store/apps/details?id=com.Wonder.Pi)
-- APP Installation Pack（iOS）：[WonderPi](https://apps.apple.com/cn/app/wonderpi/id1477946178)
+- APP Installation Pack (iOS)：[WonderPi](https://apps.apple.com/cn/app/wonderpi/id1477946178)
