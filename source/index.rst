@@ -13,8 +13,11 @@ TurboPi
 
    docs/1.getting_ready.md
    docs/2.quick_user_experience.md
-   docs/6.mecanum_wheel_control.md
-   docs/8.ai_vision_project.md
-   docs/11_network_configuration.md
+   docs/3.mecanum_wheel_control.md
+   docs/4.ROS+OpenCV_Course.md
+   docs/5.MediaPipe_Human-robot_Interaction.md
+   docs/6.Machine_Learning.md
+   docs/7.network_configuration.md
+   docs/8.Large_AI_Model_Courses.md
    docs/resources_download.md
    Download <https://drive.google.com/drive/folders/1x5IXJTTF_mz3FnN-iiRB4MxgKbYnIj25?usp=sharing>
