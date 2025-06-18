@@ -20,4 +20,4 @@ TurboPi
    docs/7.network_configuration.md
    docs/8.Large_AI_Model_Courses.md
    docs/resources_download.md
-   Download <https://drive.google.com/drive/folders/1x5IXJTTF_mz3FnN-iiRB4MxgKbYnIj25?usp=sharing>
+   Download <https://drive.google.com/drive/folders/1r3Jbn0MGWH1XD74dS-m_UzUlHFutRjrm?usp=sharing>
