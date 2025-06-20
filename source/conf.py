@@ -14,7 +14,11 @@ release = 'v2.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_markdown_tables','myst_parser','sphinx_copybutton']
+extensions = ['sphinx_markdown_tables','myst_parser','sphinx_copybutton','sphinx_multiversion']
+
+smv_branch_whitelist = r'^.*$'
+smv_released_pattern = r'^branch/.*$'
+smv_prefer_remote_refs = False
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -29,6 +33,12 @@ myst_enable_extensions = [
     "substitution",
     "dollarmath",
 ]
+
+html_sidebars = {
+    '**': [
+        'versions.html',
+    ]
+}
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
