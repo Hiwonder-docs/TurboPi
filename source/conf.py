@@ -50,6 +50,6 @@ html_static_path = ['_static']
 html_css_files = ['style.css']
 html_js_files = ['custom.js']
 html_theme_options = {
-    'version_selector': true,
+    'version_selector': True,
     'style_nav_header_background': '#f98800',
 }
