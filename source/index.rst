@@ -4,12 +4,12 @@
    contain the root `toctree` directive.
 
 =============
-TurboPi
+TurboPi Standard
 =============
 
 .. toctree::
    :maxdepth: 2
-   :caption: TurboPi
+   :caption: TurboPi Standard
 
    docs/1.getting_ready.md
    docs/2.quick_user_experience.md
