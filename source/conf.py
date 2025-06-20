@@ -48,7 +48,8 @@ html_sidebars = {
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']
-html_js_files = ['custom.js','versions.js']
+html_js_files = ['custom.js']
 html_theme_options = {
+    'version_selector': true,
     'style_nav_header_background': '#f98800',
 }
