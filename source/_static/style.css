@@ -14,6 +14,12 @@ section p {
 .wy-nav-side .wy-side-nav-search input[type=text]{
      border-color: #f98800;
 }
+.wy-side-scroll .wy-side-nav-search>div.switch-menus>div.version-switch select{
+    color:#000;
+}
+.wy-side-scroll .wy-side-nav-search>div.switch-menus>div.version-switch select:hover{
+    color:#000;
+}
 .wy-breadcrumbs-aside a{
     color: #f98800;
 }

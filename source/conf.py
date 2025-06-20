@@ -34,5 +34,8 @@ html_static_path = ['_static']
 html_css_files = ['style.css']
 html_js_files = ['custom.js']
 html_theme_options = {
+    'version_selector': True,
+    'versioning': True,
+    'current_version_name': 'Advanced',
     'style_nav_header_background': '#f98800',
 }
