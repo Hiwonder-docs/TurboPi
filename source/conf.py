@@ -16,15 +16,6 @@ release = 'v2.0'
 
 extensions = ['sphinx_markdown_tables','myst_parser','sphinx_copybutton','sphinx_multiversion']
 
-smv_branch_whitelist = r'^.*$'
-smv_released_pattern = r'^branch/.*$'
-smv_outputdir_format = '{ref.name}'
-smv_prefer_remote_refs = False
-smv_versionname_fallback = 'Advanced'
-smv_versiondict = {
-    'main': 'Advanced',
-    'standard': 'Standard',
-}
 templates_path = ['_templates']
 exclude_patterns = []
 
@@ -38,12 +29,6 @@ myst_enable_extensions = [
     "substitution",
     "dollarmath",
 ]
-
-html_sidebars = {
-    '**': [
-        'versions.html',
-    ]
-}
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
