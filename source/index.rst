@@ -9,7 +9,7 @@ TurboPi Advanced
 
 .. toctree::
    :maxdepth: 2
-   :caption: TurboPi
+   :caption: TurboPi Advanced
 
    docs/1.getting_ready.md
    docs/2.quick_user_experience.md

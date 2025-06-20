@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Advanced'
+project = 'TurboPi Advanced'
 copyright = '2025, Hiwonder'
 author = 'Hiwonder'
 release = 'v2.0'
