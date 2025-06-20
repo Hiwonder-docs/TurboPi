@@ -5,11 +5,17 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from sphinx_rtd_theme import __version__ as theme_version
+from sphinx_rtd_theme import __version_full__ as theme_version_full
+
 
 project = 'TurboPi Advanced'
+slug = re.sub(r'\W+', '-', project.lower())
+version = theme_version
+release = theme_version_full
+
 copyright = '2025, Hiwonder'
 author = 'Hiwonder'
-release = 'v2.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -48,7 +54,7 @@ html_sidebars = {
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']
-html_js_files = ['custom.js']
+html_js_files = ['custom.js','versions.js']
 html_theme_options = {
     'style_nav_header_background': '#f98800',
 }
