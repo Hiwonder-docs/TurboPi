@@ -39,7 +39,11 @@ html_sidebars = {
         'versions.html',
     ]
 }
-
+smv_versionname_fallback = 'Advanced'
+smv_versiondict = {
+    'main': 'Advanced',
+    'standard': 'Standard',
+}
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']
