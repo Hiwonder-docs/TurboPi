@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 =============
-TurboPi
+TurboPi Advanced
 =============
 
 .. toctree::

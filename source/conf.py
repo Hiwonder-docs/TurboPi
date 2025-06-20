@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'TurboPi'
+project = 'Advanced'
 copyright = '2025, Hiwonder'
 author = 'Hiwonder'
 release = 'v2.0'
@@ -18,8 +18,13 @@ extensions = ['sphinx_markdown_tables','myst_parser','sphinx_copybutton','sphinx
 
 smv_branch_whitelist = r'^.*$'
 smv_released_pattern = r'^branch/.*$'
+smv_outputdir_format = '{ref.name}'
 smv_prefer_remote_refs = False
-
+smv_versionname_fallback = 'Advanced'
+smv_versiondict = {
+    'main': 'Advanced',
+    'standard': 'Standard',
+}
 templates_path = ['_templates']
 exclude_patterns = []
 
@@ -39,11 +44,7 @@ html_sidebars = {
         'versions.html',
     ]
 }
-smv_versionname_fallback = 'Advanced'
-smv_versiondict = {
-    'main': 'Advanced',
-    'standard': 'Standard',
-}
+
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']
