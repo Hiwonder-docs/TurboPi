@@ -1,6 +1,6 @@
-const themeFlyoutDisplay = "{{ theme_flyout_display }}";
-const themeVersionSelector = {{ 'true' if theme_version_selector|tobool else 'false' }};
-const themeLanguageSelector = {{ 'true' if theme_language_selector|tobool else 'false' }};
+const themeFlyoutDisplay = "hidden";
+const themeVersionSelector = true;
+const themeLanguageSelector = true;
 
 if (themeFlyoutDisplay === "attached") {
   function renderLanguages(config) {
@@ -14,7 +14,7 @@ if (themeFlyoutDisplay === "attached") {
 
     const languagesHTML = `
       <dl>
-        <dt>{{ _('Languages') }}</dt>
+        <dt>Languages</dt>
         ${languages
           .map(
             (translation) => `
@@ -35,7 +35,7 @@ if (themeFlyoutDisplay === "attached") {
     }
     const versionsHTML = `
       <dl>
-        <dt>{{ _('Versions') }}</dt>
+        <dt>Versions</dt>
         ${config.versions.active
           .map(
             (version) => `
@@ -62,7 +62,7 @@ if (themeFlyoutDisplay === "attached") {
 
     const downloadsHTML = `
       <dl>
-        <dt>{{ _('Downloads') }}</dt>
+        <dt>Downloads</dt>
         ${Object.entries(config.versions.current.downloads)
           .map(
             ([name, url]) => `
@@ -93,34 +93,34 @@ if (themeFlyoutDisplay === "attached") {
             ${renderVersions(config)}
             ${renderDownloads(config)}
             <dl>
-              <dt>{{ _('On Read the Docs') }}</dt>
+              <dt>On Read the Docs</dt>
               <dd>
-                <a href="${config.projects.current.urls.home}">{{ _('Project Home') }}</a>
+                <a href="${config.projects.current.urls.home}">Project Home</a>
               </dd>
               <dd>
-                <a href="${config.projects.current.urls.builds}">{{ _('Builds') }}</a>
+                <a href="${config.projects.current.urls.builds}">Builds</a>
               </dd>
               <dd>
-                <a href="${config.projects.current.urls.downloads}">{{ _('Downloads') }}</a>
+                <a href="${config.projects.current.urls.downloads}">Downloads</a>
               </dd>
             </dl>
             <dl>
-              <dt>{{ _('Search') }}</dt>
+              <dt>Search</dt>
               <dd>
                 <form id="flyout-search-form">
                   <input
                     class="wy-form"
                     type="text"
                     name="q"
-                    aria-label="{{ _('Search docs') }}"
-                    placeholder="{{ _('Search docs') }}"
+                    aria-label="Search docs"
+                    placeholder="Search docs"
                     />
                 </form>
               </dd>
             </dl>
             <hr />
             <small>
-              <span>Hosted by <a href="https://about.readthedocs.org/?utm_source={{ READTHEDOCS_PROJECT }}&utm_content=flyout">Read the Docs</a></span>
+              <span>Hosted by <a href="https://about.readthedocs.org/?utm_source=&utm_content=flyout">Read the Docs</a></span>
             </small>
           </div>
         </div>
