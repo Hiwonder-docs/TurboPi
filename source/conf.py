@@ -23,6 +23,7 @@ smv_prefer_remote_refs = False
 smv_versionname_fallback = 'Advanced'
 smv_versiondict = {
     'main': 'Advanced',
+    'latest': 'Advanced',
     'standard': 'Standard',
 }
 
@@ -46,5 +47,7 @@ html_css_files = ['style.css']
 html_js_files = ['custom.js']
 html_theme_options = {
     'version_selector': True,
+    'versioning': True,
+    'current_version_name': 'Advanced',
     'style_nav_header_background': '#f98800',
 }
