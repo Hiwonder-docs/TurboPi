@@ -20,6 +20,8 @@ TurboPi Advanced
    docs/7.network_configuration.md
    docs/8.Large_AI_Model_Courses.md
 
+.. toctree::
+   :maxdepth: 2
    :caption: Data Download
 
    docs/resources_download.md
