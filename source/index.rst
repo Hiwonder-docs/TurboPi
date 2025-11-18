@@ -9,8 +9,7 @@ TurboPi Advanced
 
 .. toctree::
    :maxdepth: 2
-   :caption: TurboPi Advanced
-
+   :caption: Specification
    docs/1.getting_ready.md
    docs/2.quick_user_experience.md
    docs/3.mecanum_wheel_control.md
@@ -19,5 +18,6 @@ TurboPi Advanced
    docs/6.Machine_Learning.md
    docs/7.network_configuration.md
    docs/8.Large_AI_Model_Courses.md
+   :caption: Data Download
    docs/resources_download.md
    Download <https://drive.google.com/drive/folders/1r3Jbn0MGWH1XD74dS-m_UzUlHFutRjrm?usp=sharing>
