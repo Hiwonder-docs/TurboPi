@@ -1,13 +1,23 @@
 section p {
     margin: 0 0 18px;
 }
+.wy-side-scroll .wy-menu-vertical p.caption{
+     font-size: 16px;
+     padding: 0 .618em;
+}
+.wy-menu-vertical > ul > .toctree-l1{
+    padding-left: 14px;
+}
+.wy-menu-vertical li.toctree-l1.current>a{
+
+}
 .highlight span.err{
     border:none;
 }
 .caption{
     display:none;
 }
-.wy-menu-vertical > ul > li:last-child >a{
+.wy-menu-vertical > ul:last-child > li:last-child >a{
     display: block;
     width: fit-content;
     margin: 1.618em;
