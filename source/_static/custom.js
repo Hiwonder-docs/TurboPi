@@ -16,24 +16,22 @@ function initMenu() {
             }
         });
     }
-
-    // 获取所有包含特定a标签的li元素
-    const lias = document.querySelectorAll('.wy-menu-vertical > ul:nth-of-type(1) > li.toctree-l1 a');
-    if (lias){
-        lias.forEach(lia => {
-            // 检查是否是目标链接
-            if (lia) {
-                // 创建完整的button元素
-                const button = document.createElement('button');
-                button.className = 'toctree-expand';
-                button.title = 'Open/close menu';
-                // 不需要设置innerHTML，因为button是空的
-
-                // 将button插入到a标签的文本内容前面
-                lia.insertBefore(button, lia.firstChild);
-            }
-        });
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+        // 创建返回主项目的按钮
+        var navBar = document.querySelector('.wy-nav-side') || document.querySelector('.sidebar');
+        if (navBar) {
+            var returnBtn = document.createElement('div');
+            returnBtn.innerHTML = `
+                <div style="padding: 10px; border-bottom: 1px solid #ccc; margin-bottom: 10px;">
+                    <a href="https://your-main-project.readthedocs.io"
+                       style="display: block; padding: 8px; background: #4CAF50; color: white; text-decoration: none; border-radius: 4px;">
+                        ← Homepage
+                    </a>
+                </div>
+            `;
+            navBar.insertBefore(returnBtn.firstChild, navBar.firstChild);
+        }
+    });
     // Download 标题
     const download_p = document.querySelector('.wy-menu-vertical > p:nth-of-type(2)');
     // 创建svg元素

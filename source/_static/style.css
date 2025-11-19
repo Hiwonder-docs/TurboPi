@@ -37,6 +37,9 @@ section p {
 .caption{
     display:none;
 }
+.wy-menu-vertical li button.toctree-expand{
+    color: #d9d9d9;
+}
 .wy-nav-side .wy-menu-vertical header, .wy-menu-vertical p.caption{
     color: #f98800;
     text-transform: unset;
