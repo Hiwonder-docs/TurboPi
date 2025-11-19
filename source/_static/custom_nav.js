@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
 
             // 插入到侧边栏导航的顶部
-            var nav = sidebar.querySelector('.wy-menu.wy-menu-vertical');
-            if (nav) {
-                nav.insertBefore(returnLink.firstChild, nav.firstChild);
+            var nav_search = sidebar.querySelector('.wy-side-scroll .wy-side-nav-search');
+            if (nav_search) {
+                nav_search.insertBefore(returnLink.firstChild, nav.firstChild);
             }
         }
     }, 100);
