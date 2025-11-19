@@ -1,6 +1,5 @@
 function initMenu() {
     var sidebar = document.querySelector('.wy-nav-side');
-    if (sidebar) {
         var returnLink = document.createElement('div');
         returnLink.innerHTML = `
             <div class="main-project-link" style="
@@ -34,7 +33,6 @@ function initMenu() {
         if (nav_search) {
             nav_search.insertBefore(returnLink.firstChild, nav_search.firstChild);
         }
-    }
     const alreadyItems = document.querySelector('.toctree-l2.current');
     if (alreadyItems) {
         alreadyItems.classList.remove('current');
