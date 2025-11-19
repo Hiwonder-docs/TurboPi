@@ -31,12 +31,6 @@ myst_enable_extensions = [
     "dollarmath",
 ]
 
-# conf.py
-html_context = {
-    'main_project_url': 'https://wiki.hiwonder.com/en/latest/',
-    'main_project_name': 'Hiwonder Docs'
-}
-
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']

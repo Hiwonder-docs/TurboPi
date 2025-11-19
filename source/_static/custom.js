@@ -8,7 +8,7 @@ function initMenu() {
             background: #f8f9fa;
             border-radius: 4px;
         ">
-            <a href="https://your-main-project.readthedocs.io"
+            <a href="https://wiki.hiwonder.com/en/latest/"
                style="
                    display: block;
                    padding: 8px;
