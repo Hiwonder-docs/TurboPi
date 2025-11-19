@@ -1,38 +1,40 @@
 function initMenu() {
-    var sidebar = document.querySelector('.wy-nav-side');
-        var returnLink = document.createElement('div');
-        returnLink.innerHTML = `
-            <div class="main-project-link" style="
-                padding: 10px;
-                border-bottom: 1px solid #ccc;
-                margin: 0 10px 10px 10px;
-                background: #f8f9fa;
-                border-radius: 4px;
-            ">
-                <a href="https://your-main-project.readthedocs.io"
-                   style="
-                       display: block;
-                       padding: 8px;
-                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                       color: white;
-                       text-decoration: none;
-                       border-radius: 4px;
-                       font-weight: bold;
-                       text-align: center;
-                       transition: background 0.3s;
-                   "
-                   onmouseover="this.style.background='linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%)'"
-                   onmouseout="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
-                    ← Homepage
-                </a>
-            </div>
-        `;
+    var nav_sidebar = document.querySelector('.wy-nav-side');
+    var nav_search = nav_sidebar.querySelector('.wy-side-scroll .wy-side-nav-search');
+    var returnLink = document.createElement('div');
+    returnLink.innerHTML = `
+        <div class="main-project-link" style="
+            margin: 0 10px 10px 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        ">
+            <a href="https://your-main-project.readthedocs.io"
+               style="
+                   display: block;
+                   padding: 8px;
+                   background: #343131;
+                   color: white;
+                   text-decoration: none;
+                   border-radius: 4px;
+                   font-weight: bold;
+                   text-align: center;
+                   transition: background 0.3s;
+               ">
+                ← Homepage
+            </a>
+        </div>
+    `;
 
-        // 插入到侧边栏导航的顶部
-        var nav_search = sidebar.querySelector('.wy-side-scroll .wy-side-nav-search');
-        if (nav_search) {
-            nav_search.insertBefore(returnLink.firstChild, nav_search.firstChild);
-        }
+    let node = returnLink.firstElementChild;
+    nav_search.insertBefore(node, nav_search.firstChild);
+
+    // 绑定 hover
+    let a = node.querySelector("a");
+    a.addEventListener("mouseenter", () => a.style.background = "#F98800");
+    a.addEventListener("mouseleave", () => a.style.background = "#343131");
+
+
+    // 单页面菜单展开
     const alreadyItems = document.querySelector('.toctree-l2.current');
     if (alreadyItems) {
         alreadyItems.classList.remove('current');
