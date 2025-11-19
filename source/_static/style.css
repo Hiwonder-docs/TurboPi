@@ -3,6 +3,7 @@ section p {
 }
 .wy-side-scroll .wy-menu-vertical p.caption{
      font-size: 16px;
+     color: #fff;
      padding: 0 .618em;
 }
 .highlight span.err{

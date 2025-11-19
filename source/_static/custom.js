@@ -49,9 +49,14 @@ function initMenu() {
         download_lias.forEach(download_lia => {
             // 检查是否是目标链接
             if (download_lia) {
-                download_lia.appendChild(space);
+                download_lia.setAttribute('target', '_blank');
                 // 将i插入到a标签的文本内容前面
-                download_lia.appendChild(i);
+                var new_i = document.createElement('i');
+                var new_space = document.createTextNode(' ');
+                new_i.className = 'fa fa-cloud-download';
+                new_i.setAttribute('aria-hidden', 'true');
+                download_lia.appendChild(new_space);
+                download_lia.appendChild(new_i);
             }
         });
     }
