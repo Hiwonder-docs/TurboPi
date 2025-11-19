@@ -14,7 +14,7 @@ release = 'v1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_markdown_tables','myst_parser','sphinx_copybutton']
+extensions = ['sphinx_markdown_tables','myst_parser','sphinx_copybutton','sphinx_multiversion']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -37,5 +37,10 @@ html_theme_options = {
     'version_selector': True,
     'versioning': True,
     'current_version_name': 'Advanced',
-    'style_nav_header_background': '#f98800',
+    'style_nav_header_background': '#F29401',
+    'display_version': True,
+    'style_external_links': True,
+    'sticky_navigation': True,
+    'logo_only': False,
+    'collapse_navigation': False,
 }
