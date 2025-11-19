@@ -40,7 +40,7 @@ html_context = {
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']
-html_js_files = ['custom.js', 'rtd_custom_nav.js']
+html_js_files = ['custom.js', 'custom_nav.js']
 html_theme_options = {
     'version_selector': True,
     'versioning': True,
