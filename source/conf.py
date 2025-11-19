@@ -47,7 +47,6 @@ html_theme_options = {
     'current_version_name': 'Advanced',
     'style_nav_header_background': '#f98800',
     'display_version': True,
-    'prev_next_buttons_location': 'both',
     'style_external_links': True,
     'logo_only': False,
     'collapse_navigation': False,
