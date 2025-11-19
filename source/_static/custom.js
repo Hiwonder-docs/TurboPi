@@ -32,7 +32,7 @@ function initMenu() {
         // 插入到侧边栏导航的顶部
         var nav_search = sidebar.querySelector('.wy-side-scroll .wy-side-nav-search');
         if (nav_search) {
-            nav_search.insertBefore(returnLink.firstChild, nav.firstChild);
+            nav_search.insertBefore(returnLink.firstChild, nav_search.firstChild);
         }
     }
     const alreadyItems = document.querySelector('.toctree-l2.current');
