@@ -27,13 +27,20 @@ myst_enable_extensions = [
     "attrs_block",
     "colon_fence",
     "substitution",
-    "dollarmath"
+    "amsmath",
+    "dollarmath",
 ]
+
+# conf.py
+html_context = {
+    'main_project_url': 'https://your-main-project.readthedocs.io',
+    'main_project_name': '主项目名称'
+}
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = ['style.css']
-html_js_files = ['custom.js']
+html_js_files = ['custom_nav.js','custom.js']
 html_theme_options = {
     'version_selector': True,
     'versioning': True,
