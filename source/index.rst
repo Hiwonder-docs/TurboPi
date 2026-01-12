@@ -16,7 +16,7 @@ TurboPi Advanced
    docs/3.mecanum_wheel_control.md
    docs/4.ROS+OpenCV_Course.md
    docs/5.MediaPipe_Human-robot_Interaction.md
-   docs/6.Machine_Learning.md
+   docs/6.Machine_Learning_Application.md
    docs/7.network_configuration.md
    docs/8.Large_AI_Model_Courses.md
 
