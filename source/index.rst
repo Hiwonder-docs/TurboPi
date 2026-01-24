@@ -33,3 +33,4 @@ TurboPi Advanced
    File Transferring Tool <https://drive.google.com/drive/folders/1C7EuIE-0HHNerIY1HGWBVvhwP9w9YMJE?usp=sharing>
    WonderPi APP Pack (Android)<https://play.google.com/store/apps/details?id=com.Wonder.Pi>
    WonderPi APP Pack (iOS) <https://apps.apple.com/cn/app/wonderpi/id1477946178>
+   Firmware Flashing Tool <https://drive.google.com/drive/folders/1AzI60xU7R30l81EP0RHYJug46Nt6Q60l?usp=sharing>
