@@ -10,3 +10,4 @@
 - File Transferring Tool：[WinSCP-5.15.3-Setup.exe](https://drive.google.com/drive/folders/1C7EuIE-0HHNerIY1HGWBVvhwP9w9YMJE?usp=sharing)
 - APP Installation Pack (Android)：[WonderPi](https://play.google.com/store/apps/details?id=com.Wonder.Pi)
 - APP Installation Pack (iOS)：[WonderPi](https://apps.apple.com/cn/app/wonderpi/id1477946178)
+- Firmware Flashing Tool：[Firmware Flashing Tool]([https://apps.apple.com/cn/app/wonderpi/id1477946178](https://drive.google.com/drive/folders/1AzI60xU7R30l81EP0RHYJug46Nt6Q60l?usp=sharing))
