@@ -47,7 +47,7 @@ section p {
 .wy-nav-side .wy-menu-vertical li.toctree-l2 button.toctree-expand{
     pointer-events:none;
 }
-.wy-menu-vertical > ul > li:last-child >a{
+.wy-menu-vertical > ul:last-child > li:last-child >a{
     display: block;
     width: fit-content;
     margin: 1.618em;
