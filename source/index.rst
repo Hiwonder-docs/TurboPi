@@ -34,4 +34,4 @@ TurboPi Advanced
    WonderPi APP Pack (Android)<https://play.google.com/store/apps/details?id=com.Wonder.Pi>
    WonderPi APP Pack (iOS) <https://apps.apple.com/cn/app/wonderpi/id1477946178>
    Firmware Flashing Tool <https://drive.google.com/drive/folders/1AzI60xU7R30l81EP0RHYJug46Nt6Q60l?usp=sharing>
-   Download <https://drive.google.com/drive/folders/1EJppBKT0G0KF8uXjyMVlsAD1MwwAzq_2?usp=sharing>
+   Download <https://drive.google.com/drive/folders/1r3Jbn0MGWH1XD74dS-m_UzUlHFutRjrm>
